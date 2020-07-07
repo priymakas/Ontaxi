@@ -1,0 +1,13 @@
+MENU_BTN = "btnMenu"
+PAYMENTS_AND_PROMO_BTN = "miPayment"
+PAYMENT_TYPE_BTN = 'txtHeader'
+NAME_PAYMENT_TYPE_RU = 'Наличные'
+NAME_PAYMENT_TYPE_EN = 'Cash'
+PAYMENT_TYPE_DEFAULT_SWITCHER = "paymentMethodDefaultSwitch"
+IMPUT_PHONE_AREA = "textInputPhone"
+TERMS_AND_CONDITION_SWITCHER = "termsOfServiceTextViewSwitch"
+LOGIN_BTN = "btnLoginPhone"
+FOUR_DIGIT_CODE_AREA = "ua.com.ontaxi.client:id/codeEditText"
+INFORMATION_BTN = "miInformation"
+SETTINGS_BTN = "miSettings"
+ENTER_BTN = "btnLogin"
