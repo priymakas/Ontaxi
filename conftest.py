@@ -1,21 +1,20 @@
 from appium import webdriver
 import time
 import allure
+import pytest
+
+
 
 caps = {"platformName": "Android", "automationName": "Appium",
-        "app": "D:\\Testapk\\ontaxi-client-5.1.3-release.apk",
-        "autoGrantPermissions": True}
+            "app": "D:\\Testapk\\ontaxi-client-5.1.3-release.apk",
+            "autoGrantPermissions": True}
 
 driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", caps)
 
 
+
 def find_by_id(element_id):
     driver.find_element_by_id(element_id).click()
-
-
-def tearDown(self):
-    self.driver.hide_keyboard()
-    self.driver.quit()
 
 
 def find_by_text(element_id, sleep_time, ustext, rutext):
@@ -29,7 +28,7 @@ def find_by_text(element_id, sleep_time, ustext, rutext):
 def find_phone_in_field(phone):
     for item in driver.find_elements_by_id("textInputPhone"):
         if str(item.text) == str(phone):
-            return True
+            return
 
 
 def test_phone_number_enter(phone):
